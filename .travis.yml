@@ -1,11 +1,10 @@
 language: java
 sudo: false
 script: mvn install
-
 deploy:
   provider: releases
-  api_key: "GITHUB OAUTH TOKEN"
-  file: "FILE TO UPLOAD"
-  skip_cleanup: true
+  api_key:
+    secure: SbWAckxXNtYcVJGvx21zbVQk9o2TULz2TTkNDVDqO9jNeH3hObqkURVmiqXz5aFjv2TtVwfhf/G7aauFyZ4daTv+fZ6jtnw78hRVnciQSz/4jGE1KLUfrx+dnOKIOnpErzlTuwse0rPlOYlziiHNPj69qeZyaI1DEBGHKc4KABOVxabCsUgBCJDhHOKPvIlx84Ow8RQDVqRDf6/AWDlDJBqFUArJgFHkkV/hUSEu6exb6iePWvTnTc9F1KSpf1vcv8A7AUlv4FnwUsW8woZrdDPuAcBuXuiRFWOP/wCIzkA0t8Pj4lfi4O/tJGHsCNUAW2FrH7ZaiFUTRkOjjy9jQ0KAJfFP4CX0xYP9i48svPpI2ME5Cbl3aEP1ohoYmN2OSzJukXfjmqq3blJup98LptZZ+W8oN44dWYJpoEursoBqVbKkWEPf5+RR8umz/WpE21rDqGyYTlm5ErkZqfHyQdf2wVTR5sNeuuHL3n2HYZ6FrPn8/fILma6lg6KhWggbcbaHmMKUfyhZv5R7iaMioDKo7k7ugjjzANjLPeOHaIGwBwggWkeeDdhOxBxX+KflYU26A0pdv7vDUotxPk98YZUDtq+QvOEFjsaLv1lkABskvVCkY/kqYRgN6H3rTy42qVcGl7OwzRz4NBK8T8vO3lzlF37LPaHlk5fkiKWnNx8=
+  file: "/home/travis/.m2/repository/ch/bbw/CalculatorApp/0.0.1-SNAPSHOT/CalculatorApp-0.0.1-SNAPSHOT.jar"
   on:
-    tags: true
+    repo: lauralilyjoe/CalculatorApp
